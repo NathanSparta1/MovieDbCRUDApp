@@ -1,0 +1,134 @@
+﻿@model IEnumerable<WebApplication1.Models.Film>
+
+@{
+    ViewBag.Title = "Index";
+}
+    <body>
+       
+            <h2 class="title">Films</h2>
+
+            <p>
+                <div class=" mybuttonc"> @Html.ActionLink("Create New", "Create")</div>
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+
+                        <p>Title</p>
+                    </th>
+                    <th>
+                        <p>Genre</p>
+                    </th>
+                    <th>
+                        <p>Duration(mins)</p>
+                    </th>
+                    <th>
+                        <p>Director</p>
+                    </th>
+                    <th>
+                        <p>Rating(out of 10)</p>
+                    </th>
+                    <th>
+                        <p>Age Rating</p>
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FilmName)
+                        </td>
+                        <td>
+
+                            @Html.DisplayFor(modelItem => item.Genre.GenreName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Duration)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DirectorName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rating)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AgeRating)
+                        </td>
+                        <td>
+                            <div class=" mybutton">@Html.ActionLink("Edit", "Edit", new { id = item.FilmId })</div>
+                            
+                            <div class=" mybutton">@Html.ActionLink("Details", "Details", new { id = item.FilmId })</div>
+                            
+                            <div class=" mybutton">@Html.ActionLink("Delete", "Delete", new { id = item.FilmId })</div>
+</td>
+                    </tr>
+                }
+
+            </table>
+       
+    </body>
+<style>
+
+    .table
+    {
+        background-color:#c0bcbc;
+        
+        
+        border-radius:2vmin;
+    }
+
+    
+
+    .mybutton
+    {
+        background-color:orange;
+        width:60px;
+        text-align:center;
+        
+        padding:0.5px;
+    }
+
+    .mybuttonc
+    {
+        background-color:orange;
+        width:60px;
+        text-align:center;
+        border-radius:2vmin;
+        padding:0.5px;
+    }
+
+    .mybutton:hover
+    {
+        background-color:darkorange;
+        text-decoration:none;
+        text-decoration-color:none;
+        transition: 0.5s;
+        
+    }
+
+    .mybuttonc:hover
+    {
+        background-color:hotpink;
+        text-decoration:none;
+        text-decoration-color:none;
+        transition: 0.5s;
+        color: white;
+    }
+    
+    .maincontainer
+    {
+        height:100vh;
+        width:100vw;
+  
+        margin-right:15px;
+        margin-top:5px;
+    }
+
+    .body-content{
+        background: linear-gradient( to top, white, grey);
+        height:100%;
+        width:100%;
+    }
+</style>
