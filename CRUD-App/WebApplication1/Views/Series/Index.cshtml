@@ -4,8 +4,8 @@
     ViewBag.Title = "Index";
 }
 <body>
-    <h2>Series</h2>
-
+    <h2 class="title">Series</h2>
+    <p>Add, edit and delete your favourite shows from the list below</p>
     <p>
         <div class=" mybuttonc"> @Html.ActionLink("Create New", "Create")</div>
 </p>
@@ -64,6 +64,12 @@
 
 
         border-radius:2vmin;
+    }
+
+.title
+    {
+        font-size:3em;
+        font-weight:bold;
     }
 
  .mybutton

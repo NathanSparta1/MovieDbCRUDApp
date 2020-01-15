@@ -1,7 +1,10 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+    <head>
 
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
 
     <body>
         <div class="container">
@@ -9,7 +12,7 @@
             <p class="title">Welcome to The Movie Database</p>
 
             <p class="para">
-                This website allows you to record all your favourite movies
+                This website allows you to keep records of all your favourite movies
                 and shows for your own benefit
             </p>
 
@@ -19,20 +22,25 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="~/Images/avengers poster.jpg" alt="Los Angeles">
+                        <img src="~/Images/avengers poster.jpg" alt="avengers">
                     </div>
 
                     <div class="item">
-                        <img src="~/Images/avatar 2.jpg" alt="Chicago">
+                        <img src="~/Images/avatar 2.jpg" alt="avatar">
                     </div>
 
                     <div class="item">
-                        <img src="~/Images/shawshank 2.jpg" alt="New York">
+                        <img src="~/Images/shawshank 2.jpg" alt="shawshank">
+                    </div>
+
+                    <div class="item">
+                        <img src="~/Images/Looperposter.jpg" alt="Looper">
                     </div>
                 </div>
 
@@ -46,18 +54,54 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+
+            <p class="texticon">
+                Use the icons provided below to navigate to your favourite streaming websites
+            </p>
+            <div class="linkicons">
+                <a href="https://www.netflix.com/gb/">
+                    <img class="netflixicon" border="0" alt="netflix" src="~/Images/netflixlogo2.png" width="100" height="100">
+                </a>
+
+                <a href="https://www.amazon.co.uk/gp/video/offers/ref=dvm_uk_sl_ambr|c_324955642447_m_GI9EKwya-dc_s_/257-1841314-2086959">
+                    <img class="amazonicon" border="0" alt="amazon" src="~/Images/amazon prime video.png" width="100" height="100">
+                </a>
+
+                <a href="https://www.youtube.com/">
+                    <img class="youtubeicon" icon border="0" alt="youtube" src="~/Images/utube icon.png" width="100" height="100">
+                </a>
+
+                <a href="https://preview.disneyplus.com/uk">
+                    <img class="disneyplusicon" icon border="0" alt="disneyplus" src="~/Images/disney plus icon.jpg" width="100" height="100">
+                </a>
+
+            </div>
+
         </div>
     </body>
 <style>
+    
+    .body-content
+    {
+        font-family: 'Raleway', sans-serif;
+    }
+
     .title
     {
         font-size:3em;
         font-weight:bold;
+         margin-left:200px;
+    }
+
+    .para
+    {
+         margin-left:200px;
     }
 
     .body-content {
         background-color: grey;
         width: 100%;
+       
     }
 
     .navbar {
@@ -74,9 +118,89 @@
 
     .item img
     {
-        height: 400px !important;
-        width: 600px !important;
+        height: 200px !important;
+        width: 1000px !important;
         
+    }
+
+    .carousel
+    {
+        width: 400px;
+        margin-left:300px;
+    }
+
+    .texticon
+    {
+        display:inline-block;
+         margin-left:250px;
+         margin-top:10px;
+         font-weight:bold;
+    }
+
+    .linkicons
+    {
+        margin-left:175px;
+        margin-top:10px;
+    }
+
+    .netflixicon
+    {
+       margin-right:80px;
+        border-radius:2vmin;
+        transition:0.5s ease;
+    }
+
+    .amazonicon
+    {
+       margin-right:80px;
+        border-radius:2vmin;
+        transition:0.5s ease;
+    }
+
+    .youtubeicon
+    {
+       margin-right:80px;
+       border-radius:2vmin;
+       transition:0.5s ease;
+    }
+
+    .disneyplusicon
+    {
+       margin-right:80px;
+        border-radius:2vmin;
+        transition:0.5s ease;
+    }
+
+
+
+    .netflixicon:hover
+    {
+        height:130px;
+        width:130px;
+        transition:0.5s;
+    }
+
+    
+
+    .amazonicon:hover
+    {
+        height:130px;
+        width:130px;
+        transition:0.5s;
+    }
+
+    .youtubeicon:hover
+    {
+        height:130px;
+        width:130px;
+        transition:0.5s;
+    }
+
+    .disneyplusicon:hover
+    {
+        height:130px;
+        width:130px;
+        transition:0.5s;
     }
    
 </style>
