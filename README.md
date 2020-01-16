@@ -20,6 +20,7 @@ To run the code it should run if you press start in visual studio
 
 Database structure(3 tables, 1 foreign key):
 
+'''Sql
 CREATE TABLE Genres(
 
 GenreId INT NOT NULL IDENTITY PRIMARY KEY,
@@ -51,7 +52,7 @@ FOREIGN KEY (GenreId) REFERENCES Genres (GenreId)
 
 )
 
-
+'''Sql
 Homepage:
 
 
