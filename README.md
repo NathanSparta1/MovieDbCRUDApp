@@ -22,6 +22,19 @@ Database structure:
 
 Homepage:
 <img width="621" alt="Homepage" src="https://user-images.githubusercontent.com/57000810/72523187-2d354f00-3857-11ea-8203-1dc9b4fec3d7.PNG">
+
+
+
+
 Films view:
 
-Series view
+
+
+<img width="699" alt="filmPage" src="https://user-images.githubusercontent.com/57000810/72523349-7f767000-3857-11ea-960a-35f2ec77580b.PNG">
+
+
+Series view:
+
+
+
+
