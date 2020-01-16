@@ -2,6 +2,8 @@
 
 An MVC CRUD application made using ASP.Net and a connection to an SQL database. This app allows users to add, edit or delete movie records from a locally stored database.
 
+The reason why I made this project was that I was set a challenge to create a CRUD application, I also wanted to improve my abilities as a front end developer and I believe creating this application has helped me do so by testing my HTML and CSS knowledge, this was done when i had to figure out the styling of every page and make sure that it was aesthetically pleasing.
+
  Technologies used:
 
     - C#,HTML,CSS
@@ -75,7 +77,5 @@ Series view:
 
 <img width="562" alt="series" src="https://user-images.githubusercontent.com/57000810/72523474-c7959280-3857-11ea-8441-a6ec7ffe8197.PNG">
 
-
->>>>>>> 8ff1b37d333159b2eed238b9e706c20fb67e7aef
 
 
