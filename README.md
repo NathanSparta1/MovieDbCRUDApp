@@ -1,8 +1,8 @@
 # MovieDbCRUDApp
 
-An MVC CRUD application made using ASP.Net and a connection to an SQL database. This app allows users to add, edit or delete movie records from a locally stored database.
+An MVC CRUD application made using ASP.Net and a connection to an SQL database. This app allows users to add, edit or delete movie or TV show entries from a locally stored database.
 
-The reason why I made this project was that I was set a challenge to create a CRUD application, I also wanted to improve my abilities as a front end developer and I believe creating this application has helped me do so by testing my HTML and CSS knowledge, this was done when i had to figure out the styling of every page and make sure that it was aesthetically pleasing.
+The reason why I made this project was that I was set a challenge to create a CRUD application, I also wanted to improve my abilities as a front end developer and I believe creating this application has helped me do so by testing my HTML and CSS knowledge. My knowledge was tested when I had to figure out the styling and layout of every page and make sure that it was aesthetically pleasing to create a better user experience.
 
  Technologies used:
 
@@ -56,7 +56,7 @@ FOREIGN KEY (GenreId) REFERENCES Genres (GenreId)
 )
 
 ```
-Homepage:
+Homepage view:
 
 
 
