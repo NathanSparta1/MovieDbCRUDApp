@@ -4,70 +4,70 @@
     ViewBag.Title = "Index";
 }
     <body>
-       
-            <h2 class="title">Films</h2>
 
-            <p>
-                <div class=" mybuttonc"> @Html.ActionLink("Create New", "Create")</div>
-            </p>
-            <table class="table">
+        <h2 class="title">Films</h2>
+        <p>Add, edit and delete your favourite films from the list below</p>
+        <p>
+            <div class=" mybuttonc"> @Html.ActionLink("Create New", "Create")</div>
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+
+                    <p>Title</p>
+                </th>
+                <th>
+                    <p>Genre</p>
+                </th>
+                <th>
+                    <p>Duration(mins)</p>
+                </th>
+                <th>
+                    <p>Director</p>
+                </th>
+                <th>
+                    <p>Rating(out of 10)</p>
+                </th>
+                <th>
+                    <p>Age Rating</p>
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
                 <tr>
-                    <th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmName)
+                    </td>
+                    <td>
 
-                        <p>Title</p>
-                    </th>
-                    <th>
-                        <p>Genre</p>
-                    </th>
-                    <th>
-                        <p>Duration(mins)</p>
-                    </th>
-                    <th>
-                        <p>Director</p>
-                    </th>
-                    <th>
-                        <p>Rating(out of 10)</p>
-                    </th>
-                    <th>
-                        <p>Age Rating</p>
-                    </th>
-                    <th></th>
+                        @Html.DisplayFor(modelItem => item.Genre.GenreName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Duration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DirectorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rating)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AgeRating)
+                    </td>
+                    <td>
+                        <div class=" mybutton">@Html.ActionLink("Edit", "Edit", new { id = item.FilmId })</div>
+
+                        <div class=" mybutton">@Html.ActionLink("Details", "Details", new { id = item.FilmId })</div>
+
+                        <div class=" mybutton">@Html.ActionLink("Delete", "Delete", new { id = item.FilmId })</div>
+                    </td>
                 </tr>
+            }
 
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FilmName)
-                        </td>
-                        <td>
+        </table>
 
-                            @Html.DisplayFor(modelItem => item.Genre.GenreName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Duration)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.DirectorName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Rating)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.AgeRating)
-                        </td>
-                        <td>
-                            <div class=" mybutton">@Html.ActionLink("Edit", "Edit", new { id = item.FilmId })</div>
-                            
-                            <div class=" mybutton">@Html.ActionLink("Details", "Details", new { id = item.FilmId })</div>
-                            
-                            <div class=" mybutton">@Html.ActionLink("Delete", "Delete", new { id = item.FilmId })</div>
-</td>
-                    </tr>
-                }
-
-            </table>
-       
     </body>
 <style>
 
@@ -87,7 +87,7 @@
 
     .mybutton
     {
-        background-color:orange;
+        background-color:#333332;
         width:60px;
         text-align:center;
         
@@ -96,7 +96,7 @@
 
     .mybuttonc
     {
-        background-color:orange;
+        background-color:#333332;
         width:60px;
         text-align:center;
         border-radius:2vmin;

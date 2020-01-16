@@ -10,7 +10,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Genre</h4>
         <hr />
@@ -18,7 +18,8 @@
         @Html.HiddenFor(model => model.GenreId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.GenreName, htmlAttributes: new { @class = "control-label col-md-2" })
+            
+            <p class="customelabel">Genre Name</p>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.GenreName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.GenreName, "", new { @class = "text-danger" })
@@ -40,3 +41,10 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+<style>
+
+    .customelabel {
+        margin-left: 20px;
+    }
+</style>

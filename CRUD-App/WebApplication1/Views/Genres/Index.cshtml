@@ -4,30 +4,41 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
+<h2 class="title">Genres</h2>
+<p>Add, edit and delete genres, which will be used when adding new film and TV shows to your list</p>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.GenreName)
+            <p>Genre Name</p>
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.GenreName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GenreId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GenreId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GenreId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.GenreId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.GenreId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.GenreId })
+            </td>
+        </tr>
+    }
 
 </table>
+
+<style>
+
+
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+    }
+</style>
+

@@ -161,6 +161,8 @@
     <Content Include="Images\shawshank 2.jpg" />
     <Content Include="Images\shawshank poster.jpg" />
     <Content Include="Images\utube icon.png" />
+    <Content Include="Images\youtubeicon2.PNG" />
+    <Content Include="Images\youtubeicon3.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Images\netflixlogo.webp" />
