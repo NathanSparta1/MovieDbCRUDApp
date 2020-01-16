@@ -1,5 +1,5 @@
 # MovieDbCRUDApp
-A CRUD application made using ASP.Net and a connection to an SQL database
+A CRUD application made using ASP.Net and a connection to an SQL database. This app allows users to add, edit or delete movie records from the database.
 
  Technologies used:
 
@@ -18,3 +18,8 @@ Issues encountered:
 To run the code it should run if you press start in visual studio
 
 
+Database structure:
+
+Homepage:
+
+Films View Records
